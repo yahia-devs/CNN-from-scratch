@@ -5,14 +5,14 @@ import numpy as np
 class ReLU:
 
     def __init__(self):
-        self._mask = None
+        self.mask = None
 
     def forward(self, x):
-        self._mask = (x > 0)
-        return x * self._mask
+        self.mask = (x > 0)
+        return x * self.mask
 
     def backward(self, d_out):
-        return d_out * self._mask
+        return d_out * self.mask
 
     def update(self, lr):
         pass 
