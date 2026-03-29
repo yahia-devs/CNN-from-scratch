@@ -13,7 +13,7 @@ class Convolution:
 
 
 
-    def frward (self , image ):
+    def forward (self , image ):
         self.img = image
         h = self.img.shape[1]
         l = self.img.shape[2]
